@@ -1,5 +1,5 @@
 # Задача 1
-По дадено положително естествено число `n` изведете всички числа от `0` до `n` на екрана.
+По дадено положително естествено число `n` изведете всички числа от `1` до `n` на екрана.
 Намерете техния сбор и произведение.
 
 **Example 1:**
@@ -36,9 +36,9 @@ Explanation: 8 + 10 + 12 = 30
 **Example 2:**
 ```c++
 Input: n = 10, m = -1
-Output: 7 8 9 10
-        sum = 28
-        product = 5040
+Output: 0 2 4 6 8 10
+        sum = 30
+        product = 0
 ```
 
 # Задача 3
@@ -65,7 +65,7 @@ Output: 1
 
 
 # Задача 4
-По дадени числа `n` и `m` намерете `n`<sup>`m`</sup>.
+По дадени числа `n` и `m` намерете $n^m$.
 
 **Example 1:**
 ```c++  
@@ -100,13 +100,19 @@ Output: 1.29126
 # Задача 6
 По дадени числа `x` и `n` намерете стойността на следната редица.
 
-1 - $\frac{x^2}{2}$ + $\frac{x^4}{4}$ + ... + $(-1) ^ n$ $\frac{x^{2n}}{2n}$	
+1 - $\frac{x^2}{2!}$ + $\frac{x^4}{4!}$ + ... + $(-1) ^ n$ $\frac{x^{2n}}{(2n)!}$	
 
 
 **Example 1:**
 ```c++  
 Input: x = 3, n = 4
 Output: -1.1375
+Explanation: 
+term 1 value is: 1                                                    
+term 2 value is: -4.5                                                 
+term 3 value is: 3.375                                                
+term 4 value is: -1.0125                                              
+The sum of the above series is: -1.1375
 ```
 
 # Задача 7
@@ -123,6 +129,14 @@ Output: true
 Input: n = 10
 Output: false
 ```
+
+<details><summary><b>Hint 1</b></summary>
+<p>
+
+![](https://www.w3resource.com/w3r_images/cpp-for-loop-image-exercise-5.png)
+</p>
+</details>
+<br>
 
 # Задача 8
 По дадено число `n` намерете всички различни делители на `n`.
@@ -215,14 +229,22 @@ Input: n = 25, m = 15
 Output: 5
 ```
 
+<details><summary><b>Hint 1</b></summary>
+<p>
+
+![](https://www.w3resource.com/w3r_images/cpp-for-loop-image-exercise-9.png)
+</p>
+</details>
+<br>
+
 # Задача 14
-По дадено число `n` определете дали то е сбор от две прости числа. Ако да изведете ги.
+По дадено число `n` определете дали то е сбор от две прости числа. Ако да, изведете ги.
 
 **Example 1:**
 ```c++  
 Input: n = 20
-Output: 13, 7 
-Explanation: 20 = 13 + 7
+Output: 20 = 3 + 17
+        20 = 13 + 7
 ```
 
 **Example 1:**
@@ -230,6 +252,14 @@ Explanation: 20 = 13 + 7
 Input: n = 21
 Output: false
 ```
+
+<details><summary><b>Hint 1</b></summary>
+<p>
+
+Тук най-лесно е използването на функции.
+</p>
+</details>
+<br>
 
 # Задача 15
 По дадени числа `n` и `m` изведете всички нарцистични числа в инервал `[min, max]`.
@@ -241,8 +271,12 @@ Output: false
 
 **Example 1:**
 ```c++  
-Input: x = 3, n = 4
-Output: -1.1375
+Input: n = 100, m = 1000
+Output: 153 
+        370
+        371
+        407
+Explanation: 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
 ```
 
 # Задача 16
@@ -270,18 +304,25 @@ Output: 6, 28, 496
 
 **Example 1:**
 ```c++  
-Input: n = 476
+Input: n = 122345
 Output: 0: 0, 
-        1: 0,
-        2: 0,
-        3: 0,
+        1: 1,
+        2: 2,
+        3: 1,
         4: 1,
-        5: 0,
-        6: 1,
-        7: 1,
+        5: 1,
+        6: 0,
+        7: 0,
         8: 0,
         9: 0
 ```
+<details><summary><b>Hint 1</b></summary>
+<p>
+
+![](https://www.w3resource.com/w3r_images/cpp-for-loop-image-exercise-59.png)
+</p>
+</details>
+<br>
 
 # Задача 18
 Намерете броя на битовете `1` в двоичния запис на числото `n`.
