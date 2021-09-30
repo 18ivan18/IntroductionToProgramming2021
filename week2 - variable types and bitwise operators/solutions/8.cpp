@@ -1,9 +1,18 @@
 #include <iostream>
+#include <cmath>
 
 int main()
 {
-    int number;
+    double number;
+
     std::cin >> number;
 
-    std::cout << std::boolalpha << ((number & 1) != 1) << std::endl;
+    int integerPart = floor(number);
+    //	еквивалентно:
+    //	int integerPart = (int)number;
+    //	int integerPart = int(number);
+    //	int integerPart = static_cast<int>(number);
+
+    std::cout << integerPart;
+    return 0;
 }

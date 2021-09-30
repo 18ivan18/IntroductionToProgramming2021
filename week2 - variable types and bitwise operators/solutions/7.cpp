@@ -2,13 +2,11 @@
 
 int main()
 {
-    int number;
-    std::cin >> number;
+    char symbol;
+    std::cin >> symbol;
 
-    int oneLessThanNumber = number - 1;
-
-    // доста готино обяснение на алгоритъма ще откриете на: https://iq.opengenus.org/detect-if-a-number-is-power-of-2-using-bitwise-operators/
-    // двата записа отдолу са еквивалентни.
-    std::cout << std::boolalpha << ((number & oneLessThanNumber) == 0);
-    // std::cout << !(a & oneLessThanNumber);
+    //трите преобразувания са еквивалентни
+    std::cout << (int)symbol;
+    //cout << int(symbol);
+    //cout << static_cast<int>(symbol);
 }

@@ -2,13 +2,13 @@
 
 int main()
 {
-    char firstSymbol, secondSymbol, thirdSymbol;
-    std::cin >> firstSymbol >> secondSymbol >> thirdSymbol;
+    int number;
+    std::cin >> number;
 
-    int firstSymbolDigit = firstSymbol - '0';
-    int secondSymbolDigit = secondSymbol - '0';
-    int thirdSymbolDigit = thirdSymbol - '0';
+    int oneLessThanNumber = number - 1;
 
-    int result = firstSymbolDigit * 100 + secondSymbolDigit * 10 + thirdSymbolDigit;
-    std::cout << result;
+    // доста готино обяснение на алгоритъма ще откриете на: https://iq.opengenus.org/detect-if-a-number-is-power-of-2-using-bitwise-operators/
+    // двата записа отдолу са еквивалентни.
+    std::cout << std::boolalpha << ((number & oneLessThanNumber) == 0);
+    // std::cout << !(a & oneLessThanNumber);
 }

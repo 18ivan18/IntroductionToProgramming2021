@@ -1,18 +1,14 @@
 #include <iostream>
-#include <cmath>
 
 int main()
 {
-    double number;
-
+    int number;
     std::cin >> number;
 
-    int integerPart = floor(number);
-    //	еквивалентно:
-    //	int integerPart = (int)number;
-    //	int integerPart = int(number);
-    //	int integerPart = static_cast<int>(number);
+    int fourthDigit = number % 10;
+    int thirdDigit = number / 10 % 10;
+    int secondDigit = number / 100 % 10;
+    int firstDigit = number / 1000 % 10;
 
-    std::cout << integerPart;
-    return 0;
+    std::cout << fourthDigit << "-" << thirdDigit << "-" << secondDigit << "-" << firstDigit;
 }

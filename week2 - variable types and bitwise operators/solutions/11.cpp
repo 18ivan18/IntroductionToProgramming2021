@@ -2,9 +2,13 @@
 
 int main()
 {
-    int a, b, c, d, e;
-    std::cin >> a >> b >> c >> d >> e;
-    std::cout << (a ^ b ^ c ^ d ^ e);
+    char firstSymbol, secondSymbol, thirdSymbol;
+    std::cin >> firstSymbol >> secondSymbol >> thirdSymbol;
 
-    return 0;
+    int firstSymbolDigit = firstSymbol - '0';
+    int secondSymbolDigit = secondSymbol - '0';
+    int thirdSymbolDigit = thirdSymbol - '0';
+
+    int result = firstSymbolDigit * 100 + secondSymbolDigit * 10 + thirdSymbolDigit;
+    std::cout << result;
 }
