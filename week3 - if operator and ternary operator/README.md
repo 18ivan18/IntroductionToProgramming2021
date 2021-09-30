@@ -73,44 +73,28 @@ Output: 2
 ```
 
 # Задача 6
-Дадено е цяло число `x`, изведете true ако `x` е палиндром.
+Дадено е цяло петцифрено число `x`, изведете true ако `x` е палиндром.
 
 Цяло число е **палиндром** ако се чете по един и същи начин отпред назад и отзад напред. Например `121` е палиндром, докато `123` не е.
 
-
 **Example 1:**
 ```c++
-Input: x = 121
+Input: n = 12021
 Output: true
 ```
+
 **Example 2:**
 ```c++
-Input: x = -121
+Input: n = 12341
 Output: false
-Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 ```
+
 **Example 3:**
 ```c++
-Input: x = 10
+Input: n = -10301
 Output: false
-Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+Explanation: -10301 reversed is 10301-
 ```
-**Example 4:**
-```c++
-Input: x = -101
-Output: false
-```
-
-**Constraints:**
-
-- -2<sup>31</sup> <= x <= 2<sup>31</sup> - 1
-<details><summary><b>Hint 1</b></summary>
-<p>
-
-За по-лесно приемете, че `х` е петцифрено число. По-късно ще се научим как да решим задачата ако `х` е `n-цифрено` число.
-</p>
-</details>
-<br>
 
 # Задача 7
 В училище следната система за оценяване е налице:
