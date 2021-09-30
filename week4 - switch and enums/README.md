@@ -1,3 +1,30 @@
+# FAQ
+Как използваме `switch`?
+```c++
+int n = 5;
+switch (n) {
+    case 5:
+        // do something ...
+        break;
+    case 6:
+        // do something ...
+        break;
+    case 10 ... 20:
+         // do something ...
+        break;
+    default: 
+        // do something else ...
+}
+```
+
+Как използваме `enum`?
+```c++
+// Sunny = 0, Windy = 1, Cloudy = 2
+enum WeatherType { Sunny, Windy, Cloudy };
+enum WeekDays { Sun = 7, Mon = 1, Thu, ... }; 
+// Win = 1, Lose = 10, Draw = 11
+enum GameResult { Win = 1, Lose = 10, Draw };
+```
 # Задача 1
 Напишете програма, в която потребителя въвежда число `n`, след което на екрана се изписва това число на кой месец от годината съответства.
 
