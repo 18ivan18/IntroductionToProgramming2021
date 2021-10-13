@@ -14,5 +14,4 @@ int main()
     //	int integerPart = static_cast<int>(number);
 
     std::cout << integerPart;
-    return 0;
 }

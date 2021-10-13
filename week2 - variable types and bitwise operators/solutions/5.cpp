@@ -2,20 +2,20 @@
 
 int main()
 {
-    double first_number;
-    double second_number;
+    double firstNumber;
+    double secondNumber;
 
-    std::cin >> first_number >> second_number;
+    std::cin >> firstNumber >> secondNumber;
 
-    //a) с помощна променлива; в случая променливата с;
-    double c = first_number;
-    first_number = second_number;
-    second_number = c;
-    std::cout << "a = " << first_number << ", b = " << second_number << std::endl;
+    //a) с помощна променлива; в случая променливата temp;
+    double temp = firstNumber;
+    firstNumber = secondNumber;
+    secondNumber = temp;
+    std::cout << "a = " << firstNumber << ", b = " << secondNumber << std::endl;
 
     //б) с аритметични операции
-    first_number = first_number + second_number;
-    second_number = first_number - second_number;
-    first_number = first_number - second_number;
-    std::cout << "a = " << first_number << ", b = " << second_number << std::endl;
+    firstNumber = firstNumber + secondNumber;
+    secondNumber = firstNumber - secondNumber;
+    firstNumber = firstNumber - secondNumber;
+    std::cout << "a = " << firstNumber << ", b = " << secondNumber << std::endl;
 }
