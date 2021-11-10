@@ -6,4 +6,6 @@
 ### :one: Hello World
 ### :two: Variable types, arithmetic and bitwise operations 
 ### :three: If statements and ternary operator
-### :four: For, while, do while loops
+### :four: Switch and enums
+### :five: For, while, do while loops
+### :six: Arrays
