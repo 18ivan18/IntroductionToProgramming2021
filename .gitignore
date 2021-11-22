@@ -7,3 +7,6 @@
 *.lo
 *.o
 *.obj
+
+# VS Code
+.vscode
