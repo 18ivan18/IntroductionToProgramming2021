@@ -9,3 +9,5 @@
 ### :four: Switch and enums
 ### :five: For, while, do while loops
 ### :six: Arrays
+### :seven: Exam preparation
+### :eight: Functions
