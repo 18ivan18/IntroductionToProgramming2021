@@ -93,7 +93,7 @@ void f(char* str) {
 **Example 1:**
 ```c++
 Input: str = "Hello World."
-Output: 11
+Output: 12
 ```
 
 ## Задача 2
@@ -136,7 +136,7 @@ Output: d:1, e:1, h:1, l:3, o:2, r:1, w:1
  
 **Example 1:**
 ```c++
-Input: str1 = "I love to eat, but for that I have to cook – I hate this!"
+Input: str1 = "I love to eat, but for that I have to cook - I hate this!"
 Output: 
 I 
 I 
@@ -189,7 +189,7 @@ Output: Converted to uppercase: HELLO
 
 
 ## Задача 7
-Напишете функция, която сортирайте буквите (числа и пунктоация не се включват) на символен низ. 
+Напишете функция, която сортира буквите (числа и пунктоация не се включват) на символен низ. 
 
 **Example 1:**
 ```c++
@@ -232,7 +232,7 @@ Input: str = "\"Good 4 U" is a song recorded by American singer-songwriter Olivi
 Output: 2039
 ```
 
-## Задача 12
+<!-- ## Задача 12
 По дадено неотрицателно цяло число изведете неговото изписване на английски език
 
 **Example 1:**
@@ -245,10 +245,10 @@ Output: Twelve
 ```c++
 Input: 29
 Output: Twenty Nine
-``` 
+```  -->
 
-## Задача 13
-Напишете функция, която проверява дали даден низ е подниз на друг.
+## Задача 12
+Напишете функция, която проверява дали даден низ е подредица на друг.
 
 **Example 1:**
 ```c++
