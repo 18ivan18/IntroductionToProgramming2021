@@ -1,6 +1,6 @@
 #include <iostream>
 
-void removeElement(int *arr, int n, int k)
+void removeElement(int *&arr, int n, int k)
 {
     int *newarr = new int[n - 1];
     for (int i = 0; i < k; i++)
@@ -12,23 +12,16 @@ void removeElement(int *arr, int n, int k)
         newarr[i] = arr[i + 1];
     }
     delete[] arr;
-    arr = new int[n - 1];
-    for (int i = 0; i < n - 1; i++)
-    {
-        arr[i] = newarr[i];
-    }
-    for (int i = 0; i < n - 1; i++)
-    {
-        std::cout << arr[i];
-    }
+    arr = newarr;
 }
 
-void removeColumn(int **matrix, int n, int m, int k)
+void removeColumn(int **matrix, int n, int &m, int k)
 {
     for (int i = 0; i < n; i++)
     {
         removeElement(matrix[i], m, k);
     }
+    m--;
 }
 
 void print(int **matrix, int n, int m)
@@ -45,8 +38,9 @@ void print(int **matrix, int n, int m)
 
 int main()
 {
-    int n;
-    std::cin >> n;
+    int n, m;
+    std::cin >> n >> m;
+    const int colToDelete = 3;
 
     int **dynamicMatrix = new int *[n];
     for (size_t i = 0; i < n; i++)
@@ -62,11 +56,8 @@ int main()
         }
     }
 
-    removeElement(dynamicMatrix[1], n, 3);
-    for (int i = 0; i < 4; i++)
-    {
-        std::cout << dynamicMatrix[1][i];
-    }
-    removeColumn(dynamicMatrix, n, n, 3);
-    print(dynamicMatrix, n, n - 1);
+    removeColumn(dynamicMatrix, n, m, colToDelete);
+    print(dynamicMatrix, n, m);
+    removeColumn(dynamicMatrix, n, m, colToDelete);
+    print(dynamicMatrix, n, m);
 }

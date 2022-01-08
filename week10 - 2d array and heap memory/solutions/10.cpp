@@ -49,8 +49,14 @@ void print(int **matrix, int n, int m)
 
 int main()
 {
+    const int size = 3;
     int row1[] = {100, 200, 100}, row2[] = {200, 50, 200}, row3[] = {100, 200, 100};
     int *matrix[] = {row1, row2, row3};
     int **smoothenedImage = imageSmoother(matrix, 3, 3);
-    print(smoothenedImage, 3, 3);
+    print(smoothenedImage, size, size);
+    for (size_t i = 0; i < size; i++)
+    {
+        delete[] smoothenedImage[i];
+    }
+    delete[] smoothenedImage;
 }
