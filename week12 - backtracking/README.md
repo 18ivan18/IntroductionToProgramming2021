@@ -116,3 +116,124 @@ Output: false
 - 1 <= word.length <= 15
 - board and word consists of only lowercase and uppercase English letters.
  
+
+## Подготовка за контролно:
+### Задача 1
+Напишете функция `char** letterCasePermutation(char* str)`, която приема низ и
+връща масив от низове с всички възможни пермутации, където буквите са
+трансформирани да бъдат малки или големи. Резултатът да бъде сортиран
+лексикографски. В главната функция `main` извикайте `letterCasePermutation` и
+отпечатайте резултата.
+
+**Example 1:**
+
+```c++
+Input: a1b2
+Output: a1b2 a1B2 A1b2 A1B2
+```
+
+**Example 2:**
+
+```c++
+Input: 3z4 
+Output: 3z4 3Z4
+```
+
+**Example 3:**
+
+```c++
+Input: 12345
+Output: 12345 
+```
+### Задача 2
+Да се напише функция, `int replace(char *text, const char *const str1, const char *const
+str2)`, която заменя всички срещания на `str1` в `text` със `str2`. Като резултат `replace` да
+върне броя на извършените промени. Да се напише функция `main`, в която
+програмата да прочете от стандартния вход низовете `text`, `str1` и `str2`, да изпълни
+функцията replace върху тях и да изведе на стандартния изход броя на
+извършените промени, както и низа text след промените.
+
+**Constraints:**
+- `str1` и `str2` няма да надвишават дължина `1KB`
+- `text` в нито един момент няма да надвишава дължина `4KB`
+
+**За пълнота на функцията:**
+
+Ако `text` или `str1` или `str2` e невалиден указател, функцията да хвърли грешка с подходящ текст.
+
+Ако `text` или `str1` сочи към празен низ, функцията да хвърли друга грешка с подходящ текст
+
+**Example 1:**
+
+```c++
+Input: axc x b
+Output: 1 abc
+```
+
+**Example 2:**
+
+```c++
+Input: My name is who?
+       who?
+       Chica-chica Slim Shady!
+Output: 1
+        My name is Chica-chica Slim Shady
+```
+
+**Example 3:**
+
+```c++
+Input: aabbaaaa
+       aa
+       bb
+Output: 3
+        bbbbbbbb 
+```
+
+### Задача 3
+Напишете програма, която иска от потребителя число `Nϵ[3;1000]`, което
+индикира колко числа ще бъдат въведени, след това се въвежда `N` пъти
+число `nϵZ`.
+Програмата да извежда на конзолата дали дадената редица от числа е
+`hacksaw`.
+`Hacksaw` редица ще наричаме редица, която отговаря на следното условие:
+`x0 < x1 > x2 < x3 > x4 < x5 … xn` или `x0 > x1 < x2 > x3 < x4 > x5 … xn`
+.
+
+**Задачата да се реши с рекурсия**.
+
+**Examples:**
+
+```c++
+Input: 3
+       1 2 3
+Output: no
+```
+```c++
+Input: 5
+       7 6 5 4 3
+Output: no
+```
+
+```c++
+Input: 0
+Output: Invalid number of arguments
+```
+
+```c++
+Input: 2
+       2 3
+Output: Invalid number of arguments
+```
+
+```c++
+Input: 4
+       3 4 2 5 
+Output: yes
+```
+
+```c++
+Input: 6
+       10 2 9 3 8 7
+Output: yes
+```
